@@ -17,17 +17,17 @@ select
 SELECT 
 'NSO' SourceTable
 -- [NSO_Product_KEY]
-[Department] ProductGroup, 
-[ProductCode] Product_Code, 
-[Description] Product_Desc, 
-[BRAND_KEY], 
-[CATEGORY_KEY], 
-[SUPPLIER_KEY], 
-[ImageName] Product_ImageURL,
-[Import_DateTime] DWH_Create_Date, 
-[Import_DateTime] DWH_Update_Date
+,[ProductGroup]
+,[ProductCode] Product_Code
+,[Description] Product_Desc
+,[BRAND_KEY]
+,[CATEGORY_KEY]
+,[SUPPLIER_KEY]
+,[ImageURL] Product_ImageURL
+,[DWH_Create_Date]
+,[DWH_Update_Date]
 --,Brand
-FROM [DW DataMart 2015].[DWH].[LU_National_Product]
+FROM [DW DataMart 2015].[DWH].[LU_NSO_Product]
 where 1=1
 --and ProductGroup like 'POST%'
 --and ProductCode in ( '5500021','chr14','o5500021')
